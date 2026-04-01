@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .mainbar {
+    /* justify-content: center; */
+/* } */
+
+.free {
+    /* color: black; */
+    /* border: 2px solid black; */
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.free p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+    /* margin: auto; */
+    /* color: black; */
+}
+
+.toplink {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 40px;
+    /* justify-content: space-around; */
+    /* margin-bottom: 100px; */
+    /* top: 0; */
+}
+
+.toplink a {
+    text-decoration: none;
+    color: rgb(163, 163, 163);
+}
+
+.toplink a:hover {
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+.lin {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    margin-top: 30px;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 0;
+    /* gap: 250px; */
+}
+
+.navbar .logo {
+    width: 80px;
+}
+
+.ican {
+    font-size: 25px;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* nav .dropdown{
+
+} */
+.menured {
+
+    padding: 50px 100px;
+    width: 100%;
+    gap: 100px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .menured {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown .mega {
+    display: flex;
+    gap: 200px;
+    /* justify-content: space-between; */
+}
+
+.column h1 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.column a {
+    color: black;
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.column p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+}
+
+nav .egg {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+nav .eggg {
+    text-decoration: none;
+    color: red;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+nav .sale {
+    color: red;
+}
+
+nav .eggg:hover {
+    /* margin-top: 10px; */
+    border-bottom: 4px solid black;
+}
+
+
+nav .egg:hover {
+    /* padding-top: 100px; */
+    border-bottom: 4px solid black;
+}
+
+.search {
+    /* gap: -300px; */
+    display: flex;
+}
+
+.search input {
+    /* position: absolute; */
+    /* display: flex; */
+    height: 30px;
+    border: none;
+    background-color: rgb(194, 194, 194);
+    /* padding: ; */
+    padding-left: 15px;
+}
+
+.icon0 {
+    background-color: rgb(194, 194, 194);
+    width: 30px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.icon0 i {
+    padding-left: 5px;
+}
+
+.icon {
+    gap: 30px;
+    cursor: pointer;
+    display: flex;
+}
+
+.icon1 {
+    /* width: 50px; */
+    font-size: 25px;
+}
+
+.icon2 {
+    /* width: 50px; */
+    font-size: 25px;
+}
+
+.icon3 {
+    /* width: 50px; */
+    font-size: 25px;
+}
+
+.originals {
+    background-image: url(https://res.cloudinary.com/dtc2q8arn/image/upload/f_webp,q_90,w_2000/v1774001532/staging-media/layouts/originals_web_banner_vrdzbl.png);
+    background-position: center;
+    height: 750px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.shopdis {
+    padding: 15%;
+}
+
+.shopdis h2 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.shopdis button {
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(11, 11, 11);
+}
+
+.shopdis h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.shopdis button i {
+    font-size: large;
+}
+
+.shopdis button:hover {
+    color: grey;
+}
+
+.arsenal {
+    background-image: url(https://res.cloudinary.com/dtc2q8arn/image/upload/f_webp,q_90,w_2000/v1773407286/staging-media/layouts/ARSENAL_JERSEY_WEB_gpqjtr.png);
+    /* margin-top: -10px; */
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    /* margin-top: -100px; */
+    /* background-repeat: no-repeat; */
+}
+
+.lightblaze {
+    background-image: url(https://res.cloudinary.com/dtc2q8arn/image/upload/f_webp,q_90,w_2000/v1773069645/staging-media/layouts/Lightblaze_Web_qrilru.png);
+    /* margin-top: -10px; */
+    background-position: center;
+    height: 800px;
+}
+
+.trend {
+    margin-top: 80px;
+}
+
+
+.trend h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.buttocks {
+    padding-left: 15px;
+}
+
+.buttocksss span {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(227, 43, 43);
+    text-decoration: none;
+}
+
+.buttocksss {
+    padding-left: 15px;
+}
+
+.buttocksss p {
+    text-decoration: line-through;
+}
+
+.but {
+    display: flex;
+    gap: 10px;
+}
+
+.bata {
+    display: flex;
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.bata p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(211, 215, 218); */
+    /* width: 100%; */
+    /* text-decoration: none; */
+}
+
+.bata h2 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.bata h3 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(118, 118, 119);
+}
+
+.camp a {
+    text-decoration: none;
+}
+
+.camp:hover {
+    border: 1px solid black;
+}
+
+.light a {
+    text-decoration: none;
+}
+
+.light:hover {
+    border: 1px solid black;
+}
+
+.adil a {
+    text-decoration: none;
+}
+
+.adil:hover {
+    border: 1px solid black;
+}
+
+.polo a {
+    text-decoration: none;
+}
+
+.polo:hover {
+    border: 1px solid black;
+}
+
+.essen a {
+    text-decoration: none;
+}
+
+.essen:hover {
+    border: 1px solid black;
+}
+
+.who {
+    margin-top: 50px;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+}
+
+.who h2 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    /* padding-left: 400px; */
+    text-align: center;
+}
+
+.people {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    /* cursor: pointer; */
+}
+
+.people p {
+    margin-top: 10px;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.call {
+    margin-top: 50px;
+}
+
+.call h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footballers {
+    width: 65%;
+    padding-top: 75px;
+    overflow-x: scroll;
+    margin: auto;
+    scroll-behavior: smooth;
+      /* scroll-snap-type: x mandatory; */
+}
+.footballers::-webkit-scrollbar {
+    display: none;
+}
+.ballers {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    /* scroll-snap-align: start; */
+}
+
+.footballers a {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.footballers p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.footballers h5 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+    text-decoration: underline black;
+    margin-top: 100px;
+}
+
+.footballers h5:hover {
+    width: 80px;
+    background-color: black;
+    color: white;
+}
+
+.gabe h5 {
+    margin-top: 52px;
+}
+
+.eder h5 {
+    margin-top: 30px;
+}
+
+.amad h5 {
+    margin-top: 30px;
+}
+
+.gnabry h5 {
+    margin-top: 69px;
+}
+
+.miami img {
+    /* overflow: hidden; */
+    height: 366px;
+}
+
+.miami h5 {
+    margin-top: 48px;
+}
+
+.superstars {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* overflow-x: scroll; */
+    /* cursor: pointer; */
+    /* margin: auto; */
+}
+
+.superstars a {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.superstars p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.superstars h5 {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+    text-decoration: underline black;
+    margin-top: 100px;
+}
+
+.superstars h5:hover {
+    width: 80px;
+    background-color: black;
+    color: white;
+}
+
+.super h5 {
+    margin-top: 68px;
+}
+
+.motor img {
+    height: 366px;
+}
+
+.motor h5 {
+    margin-top: 86px;
+}
+
+.ultra img {
+    height: 366px;
+}
+
+.ultra h5 {
+    margin-top: 52px;
+}
+
+.samba img {
+    height: 366px;
+}
+
+.samba h5 {
+    margin-top: 69px;
+}
+
+
+.pop h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.fynshii {
+    margin-top: 75px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.fynshii h2 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100px;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    width: 365px;
+    /* padding-bottom: 15px; */
+}
+
+.fynshii h2:hover {
+    border-bottom: 10px solid black;
+}
+
+.back {
+    background-color: rgb(245, 245, 228);
+    margin-top: 125px;
+}
+
+.story {
+    /* background-color: bisque; */
+    display: flex;
+    gap: 70px;
+    /* padding: 10%; */
+    padding: 80px 270px;
+}
+
+.story h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.story p {
+    margin-top: 40px;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.yellow {
+    background-color: rgb(237, 231, 52);
+}
+
+.yellow .howww {
+    display: flex;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.howww h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+}
+
+.howww button {
+    /* margin-bottom: 50px; */
+    background-color: black;
+    color: white;
+    width: 170px;
+    height: 55px;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+}
+
+.howww button:hover {
+    color: rgb(224, 224, 224);
+}
+
+.footish {
+    display: flex;
+    gap: 700px;
+    justify-content: center;
+    padding: 60px 0px;
+}
+
+.footish .help {
+    margin-top: 20px;
+}
+
+.footish a {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footish a:hover {
+    text-decoration: underline;
+}
+
+.sup h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.com h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    background-color: rgb(40, 44, 48);
+}
+
+.cook {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.cook a {
+    color: white;
+    text-decoration: none;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(211, 215, 218);
+    /* border-right: 1px solid rgb(211, 215, 218); */
+    /* justify-content: center; */
+    /* justify-content: center; */
+}
+
+.cook .kies {
+    padding-right: 20px;
+    border-right: 1px solid rgb(211, 215, 218);
+}
+
+.cook .priv {
+    padding-right: 20px;
+    border-right: 1px solid rgb(211, 215, 218);
+}
+
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .bata {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .people {
+        flex-wrap: wrap;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+
+    .footish {
+        gap: 100px;
+    }
+
+    .fynshii h2 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .toplink {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .icon {
+        gap: 15px;
+    }
+
+    .ican {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        gap: 0;
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .originals,
+    .arsenal,
+    .lightblaze {
+        height: 500px;
+    }
+
+    .shopdis {
+        padding: 20%;
+    }
+
+    .shopdis h1 {
+        font-size: 28px;
+    }
+
+    .shopdis h2 {
+        font-size: 18px;
+    }
+
+    .bata {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .people {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footballers {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .superstars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fynshii {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fynshii h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .story {
+        padding: 40px 20px;
+    }
+
+    .yellow .howww {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footish {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cook {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .shopdis {
+        padding: 25% 10%;
+    }
+
+    .shopdis h1 {
+        font-size: 22px;
+    }
+
+    .shopdis h2 {
+        font-size: 16px;
+    }
+
+    .howww h1 {
+        font-size: 22px;
+    }
+
+    .trend h1,
+    .call h1,
+    .pop h1 {
+        font-size: 24px;
+    }
+}
