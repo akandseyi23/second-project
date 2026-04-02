@@ -20,15 +20,11 @@ img {
 /* .mainbar {
     /* justify-content: center; */
 /* } */
-
-.free {
-    /* color: black; */
-    /* border: 2px solid black; */
+.free{
     background-color: black;
     width: 100%;
     height: 40px;
 }
-
 .free p {
     font-family: AdihausDIN, sans-serif;
     font-size: 11px;
@@ -38,9 +34,15 @@ img {
     text-align: center;
     padding-top: 15px;
     text-decoration: underline;
-    /* margin: auto; */
-    /* color: black; */
 }
+
+
+.free a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .toplink {
     display: flex;
@@ -746,3 +748,5 @@ nav .egg:hover {
         white-space: nowrap;
     }
 }
+
+

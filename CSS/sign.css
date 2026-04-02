@@ -22,12 +22,12 @@ img {
 /* } */
 
 .free {
-    /* color: black; */
-    /* border: 2px solid black; */
     background-color: black;
     width: 100%;
     height: 40px;
 }
+
+
 
 .free p {
     font-family: AdihausDIN, sans-serif;
@@ -38,9 +38,17 @@ img {
     text-align: center;
     padding-top: 15px;
     text-decoration: underline;
-    /* margin: auto; */
-    /* color: black; */
 }
+
+
+
+
+.free a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .toplink {
     display: flex;
@@ -335,8 +343,8 @@ nav .egg:hover {
 }
 
 .signup-right > p {
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 20px;
     margin-bottom: 18px;
 }
 
@@ -364,8 +372,8 @@ nav .egg:hover {
 }
 
 .signup-actions button {
-    width: 220px;
-    height: 58px;
+    width: 180px;
+    height: 50px;
     border: none;
     background: black;
     color: white;
@@ -407,8 +415,8 @@ nav .egg:hover {
 }
 
 .legal p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 22px;
     color: rgb(100, 100, 100);
 }
 
@@ -656,3 +664,5 @@ nav .egg:hover {
         white-space: nowrap;
     }
 }
+
+
