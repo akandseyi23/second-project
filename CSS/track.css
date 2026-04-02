@@ -81,7 +81,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     gap: 0;
-      box-shadow: 0px 1px rgb(231, 231, 232);
+    box-shadow: 0px 1px rgb(231, 231, 232);
     /* gap: 250px; */
 }
 
@@ -269,190 +269,170 @@ nav .egg:hover {
     font-size: 25px;
 }
 
-.hero .return {
+.hero {
+    padding: 56px 60px 72px;
+}
+
+.howro {
+    width: min(100%, 1200px);
+}
+
+.hero-top {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
 }
 
 .howro h1 {
-    margin-top: 50px;
     font-family: AdiNeuePro, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 30px;
     color: rgb(0, 0, 0);
-    /* padding-left: 500px; */
-    text-align: center;
 }
 
+.hero-top a {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.hero-top a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
 .return {
-    margin-top: 50px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
 }
 
 .return .ret {
-    border: 1px solid rgb(169, 176, 190);
-    width: 250px;
-    height: 130px;
+    border: 1px solid rgb(198, 201, 205);
+    min-height: 150px;
+    padding: 20px 22px;
 }
 
 .ret h2 {
     font-family: AdihausDIN, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 36px;
     color: rgb(0, 0, 0);
-    padding-left: 20px;
 }
 
 .ret h3 {
+    margin-top: 48px;
     font-family: AdihausDIN, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 100px;
-    color: rgb(136, 145, 161);
-    padding-left: 20px;
+    line-height: 34px;
+    color: rgb(0, 0, 0);
 }
 
 .return .ret:hover {
-    border: 1px solid black;
+    border-color: black;
 }
 
-.heroine h1 {
-    font-family: AdiNeuePro, sans-serif;
-    font-size: 24px;
+.her {
+    width: min(100%, 700px);
+    padding: 44px 50px 56px;
+}
+
+.her button {
+    color: white;
+    background-color: black;
+    border: none;
+    width: 152px;
+    height: 52px;
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 20px;
+    margin-top: 26px;
+    /* color: rgb(231, 231, 232); */
+}
+
+.ord h1 {
+    font-family: AdiNeuePro, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
     color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 80px;
+    margin-bottom: 14px;
+}
+.ord a{
+    color: black;
+}
+.ord p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
 }
 
-.prod {
-    /* justify-content: space-around; */
-    margin-top: 80px;
+.inp input {
+    width: min(100%, 600px);
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 0 14px;
+    font-size: 16px;
+    border: 1px solid rgb(65, 65, 65);
+    outline: none;
 }
 
-.comp {
-    display: flex;
-    justify-content: center;
-    /* gap: 20px; */
+.inp>div {
+    margin-bottom: 22px;
 }
 
-.ref {
-    border: 1px solid rgb(169, 176, 190);
-    /* width: 444px; */
-    width: 100%;
-    max-width: 520px;
-    padding: 40px;
-    margin: 10px;
-    cursor: pointer;
-}
-.ref:hover{
-    border: 1px solid black;
+.inp p {
+    font-family: AdihausDIN, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgb(109, 115, 128);
+    margin-bottom: 2px;
 }
 
-.ref h2 {
+.rad h2 {
     font-family: AdiNeuePro, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     color: rgb(0, 0, 0);
+    margin: 34px 0 14px;
 }
 
-.ref i {
-    font-size: 30px;
-}
-
-.ref img {
-    width: 40px;
-}
-
-.your {
-    margin-top: 70px;
+.exch {
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 120px;
-    padding: 0px 20px;
-}
-.orders{
-    /* margin-left: -200px; */
-}
-.orders h3 {
-    font-family: AdihausDIN, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 50px;
-    color: rgb(0, 0, 0);
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid gray;
+    width: min(100%, 600px);
+    min-height: 64px;
+    padding: 14px 0;
 }
 
-.orders p {
+.exch:first-of-type {
+    border-top: 1px solid gray;
+}
+
+.exch h3 {
     font-family: AdihausDIN, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 22px;
     color: rgb(0, 0, 0);
 }
 
-.orders button {
-    background-color: black;
-    color: white;
-    border: none;
-    width: 170px;
-    height: 50px;
-    font-family: AdihausDIN, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-top: 30px;
-    /* color: rgb(237, 237, 237); */
-}
-
-.orders button:hover {
-    color: gray;
-}
-.still{
-    /* margin-left: 200px; */
-    /* padding-right: 200px; */
-}
-.still h3{
-    font-family: AdihausDIN, sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: 50px;
-color: rgb(0, 0, 0);
-}
-.still p{
-font-family: AdihausDIN, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 25px;
-color: rgb(0, 0, 0);
-}
-.still button{
-    width: 170px;
-    height: 50px;
-    color: black;
-    border: 1px solid black;
-    background-color: white;
-      font-family: AdihausDIN, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-top: 30px;
-}
-.still button:hover{
-    color: gray;
-}
-.bulk{
-    margin: 100px 0px;
-}
-.bulk a{
-    color: black;
-}
 .yellow {
-    margin-top: 50px;
     background-color: rgb(237, 231, 52);
 }
 
@@ -468,12 +448,10 @@ color: rgb(0, 0, 0);
     font-family: AdiNeuePro, sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 32px;
     color: rgb(0, 0, 0);
 }
 
 .howww button {
-    /* margin-bottom: 50px; */
     background-color: black;
     color: white;
     width: 170px;
@@ -491,10 +469,8 @@ color: rgb(0, 0, 0);
 
 .footish {
     display: flex;
-    /* gap: 700px; */
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 700px;
+    justify-content: center;
     padding: 60px 0px;
 }
 
@@ -513,6 +489,13 @@ color: rgb(0, 0, 0);
 
 .footish a:hover {
     text-decoration: underline;
+}
+
+.supny {
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 700px);
+    padding: 0 20px;
 }
 
 .sup h1 {
@@ -550,9 +533,6 @@ color: rgb(0, 0, 0);
     font-weight: 400;
     line-height: 16px;
     color: rgb(211, 215, 218);
-    /* border-right: 1px solid rgb(211, 215, 218); */
-    /* justify-content: center; */
-    /* justify-content: center; */
 }
 
 .cook .kies {
@@ -566,66 +546,156 @@ color: rgb(0, 0, 0);
 }
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .navbar {
         padding: 0 20px;
     }
 
-    .toplink {
-        gap: 16px;
-        padding-right: 20px;
-    }
-
     nav ul {
-        display: none;
-    }
-
-    .ican {
-        display: block;
-    }
-
-    .search {
-        display: none;
+        gap: 15px;
     }
 }
+
 @media (max-width: 768px) {
+    .her {
+        padding: 32px 16px 44px;
+    }
+
+    .ord h1 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .inp input,
+    .exch {
+        width: 100%;
+    }
 
     .toplink {
         display: none;
-    }
-
-    .navbar {
-        justify-content: space-between;
-        padding: 0 15px;
     }
 
     nav {
         display: none;
     }
 
+    .search {
+        display: none;
+    }
+
     .icon {
-        gap: 14px;
+        gap: 15px;
     }
 
-    .hero .return {
-        flex-wrap: wrap;
-        justify-content: center;
+    .ican {
+        display: block;
     }
 
-    .return .ret {
-        width: 100%;
-        max-width: 300px;
+    .navbar {
+        justify-content: space-between;
+        gap: 0;
+        padding: 0 15px;
     }
 
-    .comp {
-        flex-direction: column;
-        align-items: center;
-    }
+    .logo {
+        width: 60px;
+}
+}
+ */
 
-    .your {
-        flex-direction: column;
-        gap: 40px;
+@media (max-width: 1024px) {
+    .navbar {
         padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .footish {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 36px 16px 50px;
+    }
+
+    .hero-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .howro h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .hero-top a {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .return {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ret h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .ret h3 {
+        margin-top: 30px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .her {
+        padding: 32px 16px 44px;
+    }
+
+    .ord h1 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .inp input,
+    .exch {
+        width: 100%;
+    }
+
+    .toplink {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .icon {
+        gap: 15px;
+    }
+
+    .ican {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        gap: 0;
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 60px;
     }
 
     .yellow .howww {
@@ -635,6 +705,7 @@ color: rgb(0, 0, 0);
 
     .footish {
         flex-direction: column;
+        gap: 40px;
         align-items: center;
         text-align: center;
     }
@@ -651,31 +722,6 @@ color: rgb(0, 0, 0);
         padding-right: 0;
     }
 }
-@media (max-width: 480px) {
-
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .logo {
-        width: 60px;
-    }
-
-    .howro h1,
-    .heroine h1 {
-        font-size: 18px;
-    }
-
-    .ref {
-        padding: 20px;
-    }
-
-    .orders button,
-    .still button {
-        width: 100%;
-    }
-}
-
 
 .mainbar {
     position: relative;

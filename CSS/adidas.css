@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* .mainbar {
     /* justify-content: center; */
 /* } */
@@ -68,6 +81,7 @@
     justify-content: space-between;
     padding: 0 40px;
     gap: 0;
+      box-shadow: 0px 1px rgb(231, 231, 232);
     /* gap: 250px; */
 }
 
@@ -94,7 +108,7 @@ nav ul {
     padding: 50px 100px;
     width: 100%;
     gap: 100px;
-    margin-top: 20px;
+    margin-top: 18px;
     border: 1px solid gray;
     position: absolute;
     left: 0;
@@ -104,6 +118,7 @@ nav ul {
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.3s ease;
+    overflow-x: auto;
 }
 
 .dropdown:hover .menured {
@@ -119,9 +134,31 @@ nav ul {
 }
 
 .dropdown .mega {
-    display: flex;
-    gap: 200px;
-    /* justify-content: space-between; */
+    --max-cols: 5;
+    --cols: 5;
+    --col-gap: clamp(16px, 2vw, 40px);
+    display: grid;
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+    gap: var(--col-gap);
+    width: calc((100% - ((var(--max-cols) - 1) * var(--col-gap))) * (var(--cols) / var(--max-cols)) + ((var(--cols) - 1) * var(--col-gap)));
+    max-width: 100%;
+    margin: 0;
+}
+
+.dropdown .mega:has(> .column:nth-child(1):last-child) {
+    --cols: 1;
+}
+
+.dropdown .mega:has(> .column:nth-child(2):last-child) {
+    --cols: 2;
+}
+
+.dropdown .mega:has(> .column:nth-child(3):last-child) {
+    --cols: 3;
+}
+
+.dropdown .mega:has(> .column:nth-child(4):last-child) {
+    --cols: 4;
 }
 
 .column h1 {
@@ -156,7 +193,7 @@ nav .egg {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
 }
 
 nav .eggg {
@@ -166,7 +203,7 @@ nav .eggg {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
 }
 
 nav .sale {
@@ -202,12 +239,14 @@ nav .egg:hover {
 .icon0 {
     background-color: rgb(194, 194, 194);
     width: 30px;
+    display: flex;
     align-items: center;
-    border: 1px solid black;
+    justify-content: center;
+    /* border: 1px solid black; */
 }
 
 .icon0 i {
-    padding-left: 5px;
+    padding-left: 0;
 }
 
 .icon {
@@ -240,7 +279,12 @@ nav .egg:hover {
 }
 
 .shopdis {
-    padding: 15%;
+    /* padding: clamp(24px, 5vw, 72px) clamp(16px, 5vw, 72px); */
+    display: flex;
+    padding: 18%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .shopdis h2 {
@@ -249,6 +293,7 @@ nav .egg:hover {
     font-weight: 400;
     line-height: 24px;
     color: rgb(255, 255, 255);
+    text-align: left;
 }
 
 .shopdis button {
@@ -271,6 +316,7 @@ nav .egg:hover {
     line-height: 40px;
     color: rgb(255, 255, 255);
     padding-bottom: 20px;
+    text-align: left;
 }
 
 .shopdis button i {
@@ -309,7 +355,8 @@ nav .egg:hover {
     font-weight: 700;
     line-height: 32px;
     color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
+    padding: 0 clamp(16px, 4vw, 48px);
 }
 
 .buttocks {
@@ -342,6 +389,23 @@ nav .egg:hover {
     display: flex;
     gap: 12px;
     margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0 16px 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.bata::-webkit-scrollbar {
+    display: none;
+}
+
+.bata > div {
+    flex: 0 0 260px;
+}
+
+.bata img {
+    width: 100%;
 }
 
 .bata p {
@@ -417,6 +481,7 @@ nav .egg:hover {
     /* justify-content: space-around; */
 }
 
+.who h1,
 .who h2 {
     font-family: AdiNeuePro, sans-serif;
     font-size: 32px;
@@ -424,13 +489,16 @@ nav .egg:hover {
     line-height: 32px;
     color: rgb(0, 0, 0);
     /* padding-left: 400px; */
-    text-align: center;
+    text-align: left;
+    padding-left: max(16px, calc((100% - 1150px) / 2));
 }
 
 .people {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 16px;
     margin-top: 50px;
     /* cursor: pointer; */
 }
@@ -454,11 +522,12 @@ nav .egg:hover {
     font-weight: 700;
     line-height: 32px;
     color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
+    padding-left: max(16px, calc((100% - 1160px) / 2));
 }
 
 .footballers {
-    width: 65%;
+    width: min(100%, 1160px);
     padding-top: 75px;
     overflow-x: scroll;
     margin: auto;
@@ -482,7 +551,6 @@ nav .egg:hover {
     line-height: 22px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-
 }
 
 .footballers p {
@@ -491,6 +559,18 @@ nav .egg:hover {
     font-weight: 400;
     line-height: 17px;
     color: rgb(0, 0, 0);
+}
+
+.ballers > div:nth-child(-n+4) {
+    flex: 0 0 275px;
+}
+
+.ballers > div:nth-child(-n+4) img {
+    width: 275px;
+    height: 366px;
+    max-width: none;
+    min-width: 275px;
+    object-fit: cover;
 }
 
 .footballers h5 {
@@ -540,6 +620,8 @@ nav .egg:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 16px;
     /* overflow-x: scroll; */
     /* cursor: pointer; */
     /* margin: auto; */
@@ -614,7 +696,8 @@ nav .egg:hover {
     font-weight: 700;
     line-height: 32px;
     color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
+    padding-left: max(16px, calc((100% - 1175px) / 2));
     margin-top: 100px;
 }
 
@@ -623,6 +706,8 @@ nav .egg:hover {
     display: flex;
     gap: 40px;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 16px;
 
 }
 
@@ -651,7 +736,7 @@ nav .egg:hover {
     display: flex;
     gap: 70px;
     /* padding: 10%; */
-    padding: 80px 270px;
+    padding: 80px 80px;
 }
 
 .story h1 {
@@ -687,7 +772,7 @@ nav .egg:hover {
     font-family: AdiNeuePro, sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 32px;
+    /* line-height: 32px; */
     color: rgb(0, 0, 0);
 }
 
@@ -731,7 +816,12 @@ nav .egg:hover {
 .footish a:hover {
     text-decoration: underline;
 }
-
+.supny{
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 700px);
+    padding: 0 20px;
+}
 .sup h1 {
     font-family: AdiNeuePro, sans-serif;
     font-size: 18px;
@@ -786,7 +876,7 @@ nav .egg:hover {
 @media (max-width: 1024px) {
 
     .navbar {
-        gap: 50px;
+        /* gap: 50px; */
         padding: 0 20px;
     }
 
@@ -795,8 +885,8 @@ nav .egg:hover {
     }
 
     .bata {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
     }
 
     .people {
@@ -868,8 +958,11 @@ nav .egg:hover {
     }
 
     .bata {
-        flex-direction: column;
-        align-items: center;
+        gap: 10px;
+    }
+
+    .bata > div {
+        flex-basis: 240px;
     }
 
     .people {
@@ -894,7 +987,8 @@ nav .egg:hover {
 
     .fynshii h2 {
         width: 100%;
-        text-align: center;
+        text-align: left;
+        padding: 0 clamp(16px, 4vw, 48px);
     }
 
     .story {
@@ -916,6 +1010,13 @@ nav .egg:hover {
     .cook {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
+    }
+
+    .cook .kies,
+    .cook .priv {
+        border-right: none;
+        padding-right: 0;
     }
 }
 
@@ -941,5 +1042,29 @@ nav .egg:hover {
     .call h1,
     .pop h1 {
         font-size: 24px;
+    }
+}
+
+.mainbar {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .toplink.mobile-open {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 82px;
+        right: 16px;
+        background-color: white;
+        padding: 12px 14px;
+        border: 1px solid rgb(211, 215, 218);
+        z-index: 2500;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .toplink.mobile-open .lin {
+        white-space: nowrap;
     }
 }
